@@ -36,9 +36,15 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/test.do")
+	@RequestMapping(value="/test.do")
 	public void test() {
-		System.out.println("Test~~~~~~!!!");
+		System.out.println("Test ~~~~~~~");
+	}
+	
+	//test2 print  //URL : /member/memberJoin.do
+	@RequestMapping(value = "/member/memberJoin.do")
+	public void test2() {
+		System.out.println("sfsdfsfsdfsfsdfsdf");
 	}
 	
 }
