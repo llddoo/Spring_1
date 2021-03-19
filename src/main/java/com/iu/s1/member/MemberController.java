@@ -17,13 +17,13 @@ public class MemberController {
 	private MemberService memberService;
 	
 	
-	// memberJoin  //   /member/memberJoin GET
+	// memberJoin  //   /member/memberJoin GET 한마디로 입력하러 가는 홈페이지 역할이야
 	@RequestMapping(value = "/member/memberJoin")
 	public String memberJoin() {
 		return "member/memberJoin";
 	}
 	
-	// memberJoin2 //	/member/memberJoin POST
+	// memberJoin2 //	/member/memberJoin POST 그리고 얘는 DB에 조회하고 불러오기위한 역할
 	@RequestMapping(value = "/member/memberJoin", method = RequestMethod.POST)
 	public void memberJoin(MemberDTO memberDTO)throws Exception{
 		
