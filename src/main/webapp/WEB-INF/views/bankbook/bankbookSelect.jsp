@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Bank Book Select Page</h1>
-	<c:if test="${dto == null}">
+	<c:if test="${empty dto}">
 		<h3>상품이 없습니다</h3>
 	</c:if>
 	

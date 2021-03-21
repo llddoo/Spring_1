@@ -27,6 +27,7 @@ public class BankbookController {
 	//상품 상세
 	@RequestMapping(value = "/bankbook/bankbookSelect")
 	public ModelAndView bankbookSelect(BankBookDTO bankBookDTO, ModelAndView modelAndView) throws Exception {
+		System.out.println("Num : " +bankBookDTO.getBookNumber());
 		bankBookDTO = bankbookService.getSelect(bankBookDTO);
 		modelAndView.addObject("dto", bankBookDTO);
 		modelAndView.setViewName("bankbook/bankbookSelect");

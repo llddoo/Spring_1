@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class BankBookDAO {
 
 	public int setWrite(BankBookDTO bankBookDTO)throws Exception{
